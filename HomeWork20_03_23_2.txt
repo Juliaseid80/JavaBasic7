@@ -1,0 +1,15 @@
+package HW;
+
+import java.util.Scanner;
+
+public class PizzaDemo {
+    public static void main(String[] args) {
+         Pizza pizza = new Pizza();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter please diameter of pizza: ");
+        double diamPizza = scanner.nextDouble();
+        System.out.println("The square of this pizza is: " + pizza.calculateSquare(diamPizza));
+
+        scanner.close();
+    }
+}

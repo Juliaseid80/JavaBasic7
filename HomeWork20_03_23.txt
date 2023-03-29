@@ -1,0 +1,31 @@
+package homeWork20_03_23;
+
+public class Pizza {
+    double diameter;
+
+    // S=d^2/4*3.14
+    public double pow(double diameterInput, double degree) {
+        double result = Math.pow(diameterInput, degree);
+        return result;
+    }
+
+    public double divide(double result1, double four) {
+        double division = result1 / four;
+        return division;
+    }
+
+    public double multiply(double result2, double pi) {
+        double multiplication = result2 * 3.14;
+        return multiplication;
+    }
+
+    public double calculateSquare(double diameter) {
+        //S=d^2/4*3.14
+        double result1 = pow(diameter, 2);
+        double result2 = divide(result1, 4);
+        double square = multiply(result2, 3.14);
+        return square;
+
+    }
+}
+
